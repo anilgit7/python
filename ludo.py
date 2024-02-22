@@ -44,11 +44,11 @@ while max(player_score)<max_score:
             player_score[i] -= current_score
         print("Your score till now is: ",player_score[i])
 
-    for a in range(players):
-        if i!=a:
-            if player_score[i]==player_score[a]:
-                player_score[a]=0
-                print("total of player",a+1,"becomes zero")
+        for a in range(players):
+            if i!=a:
+                if player_score[i]==player_score[a]:
+                    player_score[a]=0
+                    print("total of player",a+1,"becomes zero")
 
 max_score=max(player_score)
 winner=player_score.index(max_score)
